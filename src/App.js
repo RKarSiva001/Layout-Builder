@@ -29,6 +29,7 @@ class App extends Component {
 
   render() {
     const {showContent, showLeftNavbar, showRightNavbar} = this.state
+
     return (
       <ConfigurationContext.Provider
         value={{
@@ -40,7 +41,7 @@ class App extends Component {
           onToggleShowRightNavbar: this.onToggleShowRightNavbar,
         }}
       >
-        <div>
+        <div className="app-container">
           <ConfigurationController />
           <Layout />
         </div>
